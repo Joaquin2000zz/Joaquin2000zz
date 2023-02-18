@@ -7,4 +7,4 @@
 * 📫 How to reach me: <a href="https://www.linkedin.com/in/joaquin-victoria-delgado-31a53a222/">LinkedIn</a>
 * ❤️ I love Programming, Math, Physics, and the way they interact with each other to describe reality :)
 ### 📈 Most used languages:
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=zluvsand"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=Joaquin2000zz"/>
