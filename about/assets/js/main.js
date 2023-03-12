@@ -231,4 +231,4 @@ try {
   });
   
 })()
-} catch(err) { window.location.reload(); }
+} catch(err) { window.location.reload(true); }
