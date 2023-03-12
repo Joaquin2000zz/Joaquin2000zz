@@ -229,7 +229,9 @@
     })
   });
   
-} catch(err) { console.log(err);
-                window.location.reload();}
+} catch(err) {
+  console.log(err);
+  console.log('entre al catch');
+  window.location.reload();
 }
-)()
+})()
