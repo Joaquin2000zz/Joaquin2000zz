@@ -1,4 +1,5 @@
-(function() { try {
+try {
+  (function() {
   "use strict";
   /**
    * Easy selector helper function
@@ -229,9 +230,5 @@
     })
   });
   
-} catch(err) {
-  console.log(err);
-  console.log('entre al catch');
-  window.location.reload();
-}
 })()
+} catch(err) { window.location.reload(); }
