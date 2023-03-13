@@ -231,4 +231,10 @@ try {
   });
   
 })()
-} catch(err) { window.location.reload(true); }
+} catch(err) {
+  const flag = navigator.userAgent.search('Firefox');
+  if (flag > -1)
+    alert('This site does not support Firefox for the moment.');
+  else
+    window.location.reload(true);
+}
