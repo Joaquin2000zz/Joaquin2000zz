@@ -346,7 +346,19 @@
   <script async src="assets/js/main.js"></script>
   <script async src="assets/js/get_age.js"></script>
   <script async src="assets/js/carrousel.js"></script>
-  <script>console.log('idk why, but if i don\'t do this, the listeners fired in the DOMContentLoaded does not work');f();</script>
+  <script>console.log('idk why, but if i don\'t do this, the listeners fired in the DOMContentLoaded does not work');
+          document.addEventListener('DOMContentLoaded', () => {
+            for (const div of document.querySelectorAll('div.portfolio_div')) {
+                let first = true, i = 0;
+                for (const child of div.children) {
+                    if (child.tagName !== 'DIV') continue;
+                    child.setAttribute('id', `${i}.Invisible`), i++;
+                    if (first)
+                        first = false, child.setAttribute('class', ''), child.setAttribute('id', `${i - 1}.Visible`);
+            }
+            }
+          })
+  </script>
 </body>
 
 </html>
