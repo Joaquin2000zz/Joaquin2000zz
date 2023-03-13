@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
+function f () {
+    document.addEventListener('DOMContentLoaded', () => {
     for (const div of document.querySelectorAll('div.portfolio_div')) {
         console.log('antes del for')
         let first = true, i = 0;
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     }
 })
-
+}
 function move(action, parent) {
     console.log('parent')
     console.log(parent)
