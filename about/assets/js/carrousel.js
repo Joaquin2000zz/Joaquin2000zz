@@ -1,12 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     for (const div of document.querySelectorAll('div.portfolio_div')) {
+        console.log('antes del for')
         let first = true, i = 0;
         for (const child of div.children) {
+            console.log('antes del if del continue')
+            console.log(child.tagName)
             if (child.tagName !== 'DIV') continue;
             child.setAttribute('id', `${i}.Invisible`), i++;
             if (first)
+                console.log('entre al if del first')
                 first = false, child.setAttribute('class', ''), child.setAttribute('id', `${i - 1}.Visible`);
-        }
+        console.log('child')
+        console.log(child)
+    }
     }
 })
 
